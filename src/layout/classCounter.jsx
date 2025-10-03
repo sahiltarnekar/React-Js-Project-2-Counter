@@ -2,19 +2,19 @@ import React, { Component } from "react";
 
 
 class ClassCounter extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       count: 0
     };
   }
 
   increment = () => {
-    this.setState((prevState) => ({ count: prevState.count + 1 }));
+    this.setState((State) => ({ count: State.count + 1 }));
   };
 
   decrement = () => {
-    this.setState((prevState) => ({ count: prevState.count > 0 ? prevState.count - 1 : 0 }));
+    this.setState((State) => ({ count: State.count > 0 ? State.count - 1 : 0 }));
   };
 
   reset = () => {

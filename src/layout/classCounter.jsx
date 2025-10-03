@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class ClassCounter extends Component {
   constructor(props) {
@@ -23,6 +23,7 @@ class ClassCounter extends Component {
 
   render() {
     return (
+      <>
       <div className="bg-light min-vh-100 d-flex flex-column">
         <main className="flex-fill">
           <div className="container">
@@ -46,6 +47,7 @@ class ClassCounter extends Component {
           </div>
         </main>
       </div>
+      </>
     );
   }
 }
